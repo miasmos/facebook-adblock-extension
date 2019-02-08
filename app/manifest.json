@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "default_locale": "en",
+    "name": "Facebook Adblock",
+    "description": "Removes Sponsored posts on Facebook.",
+    "content_security_policy": "script-src 'self'; object-src 'self'",
+    "content_scripts": [
+        {
+            "matches": ["*://*/*"],
+            "js": ["zepto.js", "background.js"],
+            "run_at": "document_idle"
+        }
+    ],
+    "version": "1.0.0",
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    }
+}
