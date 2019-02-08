@@ -6,12 +6,12 @@
     "content_security_policy": "script-src 'self'; object-src 'self'",
     "content_scripts": [
         {
-            "matches": ["*://*.facebook.com*", "*://*.fb.com*"],
+            "matches": ["*://*.facebook.com/*", "*://*.fb.com/*"],
             "js": ["zepto.js", "background.js"],
             "run_at": "document_idle"
         }
     ],
-    "version": "1.0.0",
+    "version": "1.0.1",
     "icons": {
         "16": "icon16.png",
         "48": "icon48.png",
