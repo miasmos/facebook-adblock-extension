@@ -1,8 +1,8 @@
 {
     "manifest_version": 2,
     "default_locale": "en",
-    "name": "Facebook Adblock",
-    "description": "Removes Sponsored posts on Facebook.",
+    "name": "Social Adblock",
+    "description": "Remove sponsored posts on Facebook.",
     "content_security_policy": "script-src 'self'; object-src 'self'",
     "content_scripts": [
         {
@@ -11,7 +11,7 @@
             "run_at": "document_idle"
         }
     ],
-    "version": "1.0.1",
+    "version": "1.0.2",
     "icons": {
         "16": "icon16.png",
         "48": "icon48.png",
